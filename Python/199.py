@@ -4,8 +4,7 @@
 #        self.val = val
 #        self.left = left
 #        self.right = right
-        
-        
+                
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         arr = []
