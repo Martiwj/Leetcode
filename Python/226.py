@@ -11,7 +11,6 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        
 
         if root:
             root.left, root.right = root.right, root.left
