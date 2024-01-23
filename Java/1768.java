@@ -17,7 +17,7 @@ class Solution {
             newString.append(word2.substring(minLength)); 
         }
 
-        return newString
+        return newString.toString(); 
 
     }
 }
