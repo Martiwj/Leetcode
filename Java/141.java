@@ -21,6 +21,7 @@ public class Solution {
         ListNode curr = head; 
 
         while(curr != null){
+            
             if(visited.contains(curr)){
                 return true; 
             }
