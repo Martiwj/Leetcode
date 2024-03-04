@@ -33,8 +33,4 @@ class Solution(object):
         elif p2:
             current.next = p2
 
-        return head.next
-
-
-
-        
+        return head.next        
