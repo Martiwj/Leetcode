@@ -21,7 +21,6 @@ class Solution(object):
 
         result_node = ListNode(current_digit)
 
-
         next_l1 = l1.next if l1 else None
         next_l2 = l2.next if l2 else None
         result_node.next = self.addTwoNumbers(next_l1, next_l2, new_carry)
