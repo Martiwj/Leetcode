@@ -4,21 +4,18 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
 class Solution(object):
-    def preorderTraversal(self, root):
+    def postorderTraversal(self, root):
         """
         :type root: TreeNode
         :rtype: List[int]
         """
         array = []
-
-        def order(array,root):
-
-            if root:
-                array.append(root.val)
-                order(array,root.left)
+        def order(array, root):
+            if root: 
+                order(array, root.left)
                 order(array, root.right)
-        
+                array.append(root.val)
+                
         order(array, root)
         return array
