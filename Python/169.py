@@ -12,6 +12,3 @@ class Solution(object):
             if freqs[num] >= lenght:
                 return num
             freqs[num] += 1
-            
-    
-    
