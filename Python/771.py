@@ -1,0 +1,13 @@
+from collections import Counter
+
+class Solution(object):
+    def numJewelsInStones(self, jewels, stones):
+        """
+        :type jewels: str
+        :type stones: str
+        :rtype: int
+        """
+        j = Counter(jewels)
+        s = Counter(stones)
+        
+        
