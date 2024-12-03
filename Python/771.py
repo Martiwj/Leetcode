@@ -7,7 +7,6 @@ class Solution(object):
         :type stones: str
         :rtype: int
         """
-        j = Counter(jewels)
-        s = Counter(stones)
-        
-        
+        jewel_set = set(jewels)
+
+        return sum(stone in jewel_set for stone in stones)
