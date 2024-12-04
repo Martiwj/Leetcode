@@ -9,8 +9,7 @@ class Solution:
         for i in range(1,len(nums)):
             if (diff := nums[i] - nums[i-1]) > max_dist:
                 max_dist = diff 
-            
-    
+
         return max_dist
 
 
