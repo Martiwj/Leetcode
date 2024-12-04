@@ -10,5 +10,5 @@ class Solution:
             r-=1             
         return " ".join(s)
     
-        # Denne funker og: 
+        # Denne funker og:
         #return " ".join(reversed(s.split()))
