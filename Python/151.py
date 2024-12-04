@@ -1,3 +1,14 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
-        return " ".join(reversed(s.split()))
+        s = s.split()
+        
+        l = 0
+        r = len(s) -1
+        while l <= r:
+            s[l], s[r] = s[r], s[l]
+            l+=1 
+            r-=1             
+        return " ".join(s)
+    
+        # Denne funker og: 
+        #return " ".join(reversed(s.split()))
